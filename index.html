@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+    </head>
+    <body>
+        <!--login page-->
+        <h1>Please Log In</h1>
+        
 
+        <br>
+
+        <form> <!--action="/submit-form-endpoint" method="POST"-->
+            <fieldset> <!--need?-->
+                <legend>Login</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" maxlength="12">
+                <br>
+
+                <label for="secret">Password:</label>
+                <input type="password" name="secret" id="secret" size="10" maxlength="12" required>
+                <br>
+
+                <!--input type="submit" value="Login"-->
+                <button>Login</button> <!--on click-->
+            </fieldset>
+            <fieldset>
+                <label for="remember">Remember Username</label>
+                <input type="checkbox" id="remember" name="remember" value="remember">
+                <br>
+
+                <a href="newAccount.html"><button>Create Account</button></a>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
